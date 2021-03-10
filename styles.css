@@ -80,22 +80,6 @@ header#main-header div.side img {
   border-radius: 50%;
   background-color: #667580;
 }
-
-header#main-header div.side button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 90px;
-  height: 34px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #fff;
-  background-color: #3bb9e3;
-  border: 0;
-  border-radius: 16px;
-}
-
 section.banner {
   display: flex;
   align-items: center;
@@ -255,6 +239,7 @@ section.wrapper-content aside.profile .widget strong {
 
 section.wrapper-content aside.profile strong img {
   margin-right: 5px;
+  
 }
 
 section.wrapper-content aside.profile .followers ul {
@@ -316,6 +301,41 @@ section.wrapper-content .timeline nav a:first-child {
 
 section.wrapper-content .timeline nav a.active {
   color: #1f2226;
+}
+
+section.wrapper-content div#createTweet {
+  text-align: end;
+} 
+
+section.wrapper-content div#createTweet button {
+  position: relative;
+
+  margin-top: 10px;
+  width: 90px;
+  height: 34px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3bb9e3;
+  border: 0;
+  border-radius: 16px;
+}
+
+section.wrapper-content div#createTweet textarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px;
+  width: 490px;
+  height: 55px;
+  font-size: 14px;
+  border-radius: 10px;
+
+}
+
+section.wrapper-content div#createTweet textarea:focus {
+  outline: none;
 }
 
 section.wrapper-content .timeline ul.tweets {
@@ -380,6 +400,7 @@ section.wrapper-content .timeline ul.tweets li .actions a:first-child {
 
 section.wrapper-content .timeline ul.tweets li .actions a img {
   margin-right: 5px;
+  width: 15px;
 }
 
 section.wrapper-content aside.widgets {

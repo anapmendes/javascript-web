@@ -27,7 +27,6 @@
       <div class="side">
         <input placeholder="Search on Twitter" type="text" />
         <img src="/images/avatar.png" alt="Avatar" />
-        <button>Tweet</button>
       </div>
     </section>
   </header>
@@ -42,7 +41,7 @@
         </li>
         <li>
           <span>Followings</span>
-          <strong>350</strong>
+          <strong id="followingNumber">350</strong>
         </li>
         <li>
           <span>Followers</span>
@@ -82,13 +81,21 @@
       </div>
     </aside>
     <section class="timeline">
+      <ul class="tweets">
+        <li>
+          <div id="createTweet">
+            <textarea id="myTweet"></textarea>
+            <button onclick="goTweet()">Tweet</button>
+          </div>
+        </li>
+      </ul>
       <nav>
         <a href="" class="active">Tweets</a>
         <a href="">Tweets and Replace</a>
         <a href="">medias</a>
       </nav>
       <ul class="tweets">
-        <li>
+        <li class="tweetItem">
           <img src="/images/avatar.png" alt="Avatar" />
           <div class="info">
             <strong>
@@ -101,15 +108,19 @@
               text ever since the 1500
             </p>
             <div class="actions">
-              <a href=""><img src="/images/comments.svg" alt="Comments" />3</a>
-              <a href=""><img src="/images/refresh.svg" alt="Refresh" />4</a>
+              <a onclick="comment()"><img id="comments" src="/images/comments.svg" alt="Comments" />
+                <text id="commentsNumber">3</text>
+              </a>
+              <a onclick="refresh()"><img id="refresh" src="/images/refresh.svg" alt="Refresh" />
+                <text id="refreshNumber">4</text>
+              </a>
               <a onclick="like()"><img id="like" src="/images/heart.svg" alt="Like" />
                 <text id="likeNumbers">5</text>
               </a>
             </div>
           </div>
         </li>
-        <li>
+        <li class="tweetItem">
           <img src="/images/avatar.png" alt="Avatar" />
           <div class="info">
             <strong>
@@ -122,13 +133,13 @@
               text ever since the 1500
             </p>
             <div class="actions">
-              <a href=""><img src="/images/comments.svg" alt="Comments" />3</a>
-              <a href=""><img src="/images/refresh.svg" alt="Refresh" />4</a>
-              <a href=""><img src="/images/heart.svg" alt="Like" />5</a>
+              <a><img id="comments" src="/images/comments.svg" alt="Comments" />3</a>
+              <a><img id="refresh" src="/images/refresh.svg" alt="Refresh" />4</a>
+              <a><img id="like" src="/images/heart.svg" alt="Like" />5</a>
             </div>
           </div>
         </li>
-        <li>
+        <li class="tweetItem">
           <img src="/images/avatar.png" alt="Avatar" />
           <div class="info">
             <strong>
@@ -141,9 +152,9 @@
               text ever since the 1500
             </p>
             <div class="actions">
-              <a href=""><img src="/images/comments.svg" alt="Comments" />3</a>
-              <a href=""><img src="/images/refresh.svg" alt="Refresh" />4</a>
-              <a href=""><img src="/images/heart.svg" alt="Like" />5</a>
+              <a><img id="comments" src="/images/comments.svg" alt="Comments" />3</a>
+              <a><img id="refresh" src="/images/refresh.svg" alt="Refresh" />4</a>
+              <a><img id="like" src="/images/heart.svg" alt="Like" />5</a>
             </div>
           </div>
         </li>
@@ -164,10 +175,10 @@
                 <strong>Javascript Web
                   <span>@javascriptWeb</span>
                 </strong>
-                <button>Follow</button>
+                <button onclick="goFollowSug()">Follow</button>
               </div>
             </section>
-            <a onclick="clearSug()">x</a>
+            <a onclick="cleanSug()">x</a>
           </li>
           <li>
             <section class="profile">
@@ -200,7 +211,7 @@
     </aside>
   </section>
 
-  <script src="script.js"></script>
+  <script text="text/javascript" src="script.js"></script>
 </body>
 
 </html>
