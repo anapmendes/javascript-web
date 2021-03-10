@@ -50,7 +50,7 @@
         </li>
         <li>
           <span>Favorites</span>
-          <strong>23</strong>
+          <strong id="favoritesNumber">23</strong>
         </li>
       </ul>
       <div class="actions">
@@ -103,7 +103,9 @@
             <div class="actions">
               <a href=""><img src="/images/comments.svg" alt="Comments" />3</a>
               <a href=""><img src="/images/refresh.svg" alt="Refresh" />4</a>
-              <a onclick="like()"><img id="like" src="/images/heart.svg" alt="Like" />5</a>
+              <a onclick="like()"><img id="like" src="/images/heart.svg" alt="Like" />
+                <text id="likeNumbers">5</text>
+              </a>
             </div>
           </div>
         </li>
@@ -155,7 +157,7 @@
           <a href="">View all</a>
         </div>
         <ul>
-          <li>
+          <li id="firstProfile">
             <section class="profile">
               <img src="/images/avatar.png" alt="Avatar" />
               <div class="info">
@@ -165,7 +167,7 @@
                 <button>Follow</button>
               </div>
             </section>
-            <a href="">x</a>
+            <a onclick="clearSug()">x</a>
           </li>
           <li>
             <section class="profile">
