@@ -17,5 +17,11 @@ function goFollow() {
 function like() {
     let tweetLiked = document.getElementById('like');
 
-    tweetLiked.src = 'images/heart-color.svg';
+    tweetLiked.src = tweetLiked.src.indexOf('heart-color') < 0 ? 'images/heart-color.svg' : 'images/heart.svg';
+
+    // if (tweetLiked.src.indexOf('heart-color') == -1) {
+    //     tweetLiked.src = 'images/heart-color.svg';
+    // } else {
+    //     tweetLiked.src = 'images/heart.svg';
+    // }
 }
