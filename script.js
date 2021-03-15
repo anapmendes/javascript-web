@@ -39,8 +39,6 @@ function goTweet() {
     }
 }
 
-//Atividade complementar: clicar em comments, criar um text area e dps de inserir, fica como um tweet ali em baixo
-
 function goFollowSug() {
     let followSug = document.getElementsByTagName('button');
     let followings = document.getElementById('followingNumber');
