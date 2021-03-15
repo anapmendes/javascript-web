@@ -118,6 +118,24 @@
                 <text id="likeNumbers">5</text>
               </a>
             </div>
+            <div class="commentTweet">
+              <textarea id="myComment"></textarea>
+              <button onclick="goComment()">Reply</button>
+            </div>
+          </div>
+        </li>
+        <li class="tweetReply">
+          <img src="/images/avatar.png" alt="Avatar" />
+          <div class="reply">
+            <strong>
+              Javascript web
+              <span>@javascriptWeb</span>
+            </strong>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500
+            </p>
           </div>
         </li>
         <li class="tweetItem">
@@ -178,7 +196,7 @@
                 <button onclick="goFollowSug()">Follow</button>
               </div>
             </section>
-            <a onclick="cleanSug()">x</a>
+            <a onclick="clearSug()">x</a>
           </li>
           <li>
             <section class="profile">
@@ -211,7 +229,7 @@
     </aside>
   </section>
 
-  <script text="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

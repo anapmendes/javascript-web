@@ -338,6 +338,44 @@ section.wrapper-content div#createTweet textarea:focus {
   outline: none;
 }
 
+section.wrapper-content div.commentTweet {
+  text-align: end;
+  display: none;
+}
+
+section.wrapper-content div.commentTweet button {
+  position: relative;
+
+  margin-top: 10px;
+  width: 90px;
+  height: 34px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3bb9e3;
+  border: 0;
+  border-radius: 16px;
+}
+
+section.wrapper-content div.commentTweet textarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10px;
+  padding: 5px;
+  width: 420px;
+  height: 55px;
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: #3bb9e3;
+}
+
+section.wrapper-content div.commentTweet textarea:focus {
+  outline: none;
+}
+
+
 section.wrapper-content .timeline ul.tweets {
   list-style: none;
 }
@@ -368,6 +406,29 @@ section.wrapper-content .timeline ul.tweets li .info strong {
 }
 
 section.wrapper-content .timeline ul.tweets li .info strong span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #7b8b9a;
+}
+
+section.wrapper-content .timeline ul.tweets li.tweetReply {
+  display: none;
+  margin-left: 40px;
+}
+
+section.wrapper-content .timeline ul.tweets li .reply {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 10px;
+}
+
+section.wrapper-content .timeline ul.tweets li .reply strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+section.wrapper-content .timeline ul.tweets li .reply strong span {
   font-weight: normal;
   font-size: 13px;
   color: #7b8b9a;
